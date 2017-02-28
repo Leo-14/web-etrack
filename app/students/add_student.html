@@ -1,0 +1,82 @@
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand"><a routerLink="/students" routerLinkActive="active"><i class="glyphicon glyphicon-arrow-left"></i></a> Add New {{name}}</span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a routerLink="/home" routerLinkActive="active"><i class="glyphicon glyphicon-home"></i></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kamdjou <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">my profil</a></li>
+            <li><a routerLink="/settings" routerLinkActive="active">settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container">
+  <form #newStudent="ngForm" (ngSubmit)="addStudent(newStudent)">
+    <div class="col col-md-6 col-lg-6 col-sm-12">
+      <div class="form-group">
+        <label class="custom-title" for="name">Student FullName</label>
+        <input type="text" class="form-control" name="name" id="starttime" placeholder="firstname and lastname" ngModel>
+      </div>
+    </div>
+    <div class="col col-md-6 col-lg-6 col-sm-12">
+      <div class="form-group">
+        <label class="custom-title" for="mat_no">Student mat no</label>
+        <input type="text" class="form-control" name="mat_no" id="mat_no" placeholder="example: FE10A073" ngModel>
+      </div>
+    </div>
+    <div class="col col-md-6 col-lg-6 col-sm-12">
+      <div class="form-group">
+        <label class="custom-title" for="email">Student Email</label>
+        <input type="text" class="form-control" name="email" id="enail" placeholder="test@mail.com" ngModel>
+      </div>
+    </div>
+    <div class="col col-md-6 col-lg-6 col-sm-12">
+      <div class="form-group">
+        <label class="custom-title" for="studentphone">Student Phone</label>
+        <input type="text" class="form-control" name="phone_no" id="studentphone" placeholder="+237670274538" ngModel>
+      </div>
+    </div>
+    <div class="col col-md-6 col-lg-6 col-sm-12">
+      <div class="form-group">
+        <label class="custom-title" for="faculty"> Faculty</label>
+        <select class="form-control" id="faculty" name="faculty" ngModel>
+          <option *ngFor="let fac of faculties" [value]="fac.id">{{ fac.name }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col col-md-6 col-lg-6 col-sm-12">
+      <div class="form-group">
+        <label class="custom-title" for="department"> Department</label>
+        <select class="form-control" id="department" name="dept" ngModel>
+          <option *ngFor="let dept of departments" [value]="dept.id">{{ dept.name }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col col-md-6 col-lg-6 col-sm-12">
+      <button class="btn btn-group-lg bgcolor" type="submit">Create</button>
+    </div>
+  </form>
+</div>

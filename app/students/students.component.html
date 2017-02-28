@@ -1,0 +1,51 @@
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand">List of {{name}}</span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search by name, mat-no">
+        </div>
+        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="btn"><a routerLink="/student/new" routerLinkActive="active"><i class="glyphicon glyphicon-plus"></i>Add Student</a></li>
+        <li class=""><a routerLink="/home" routerLinkActive="active"><i class="glyphicon glyphicon-home"></i></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kamdjou <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">my profil</a></li>
+            <li><a routerLink="/settings" routerLinkActive="active">settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container">
+    <div class="col col-md-3 col-lg-2 col-sm-6 col-xm-12" *ngFor="let stud of students">
+        <div class="home-block" align="center">
+            <p><img src="app/assets/images/student.jpg" alt="student pic" class="img-responsive small-screen"></p>
+            <h4><a [routerLink]="['/students',stud.id]" routerLinkActive="active">{{ stud.name }}</a></h4>
+            <p>{{ stud.mat_no }}</p>
+        </div>
+    </div>
+</div>

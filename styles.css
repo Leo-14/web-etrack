@@ -1,5 +1,39 @@
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.img-circle {
+  border-radius: 50% !important;
+}
+
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
+}
+
+a{
+  text-decoration: none;
+  color: #009999;
+}
+
+.custom-btn{
+  background-color: #009999;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.custom-title {
+  color: #009999;
+}
+
+.container{
+  margin-bottom: 50px;
+}
+
+.bgcolor{
+  background-color: #009999;
+  color: white;
 }

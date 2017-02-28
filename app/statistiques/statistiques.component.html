@@ -1,0 +1,79 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand">{{name}}</span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+       <li class=""><a routerLink="/home" routerLinkActive="active"><i class="glyphicon glyphicon-home"></i></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kamdjou <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">my profil</a></li>
+            <li><a routerLink="/settings" routerLinkActive="active">settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <div class="col-lg-8 col-md-8 col-sm-12">
+    <div class="stud-right-col">
+      <div>
+        <div class="custom-title">
+          <span style="font-size: x-large; font-weight: bold;">Liste des Etudiant</span>
+          <input class="pull-right form-control" type="text" placeholder=" search by name, mat number ...">
+        </div>
+      </div>
+      <hr>
+      <div style="height: 320px; overflow-y: scroll;">
+        <div class="custom-list">
+          <span>Kamdjou Temfack Duplex Marie</span>
+          <span>FE10A073</span>
+        </div>
+        <div class="custom-list">
+          <span>Kamdjou Temfack Duplex Marie</span>
+          <span>FE10A073</span>
+        </div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+        <div class="custom-list">Kamdjou Temfack Duplex Marie</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="stud-left-col">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"><img src="app/assets/images/stat.jpg" alt="student pic" class="small-img img-circle img-responsive"></div>
+      <p><strong>Kamdjou Temfack Duplex Marie</strong></p>
+      <h4>FE10A073</h4>
+      <hr>
+      <p><i class="glyphicon glyphicon-star-empty"></i></p>
+      <p>Good attendance status keep up!</p>
+      <hr>
+      <p>notified the student for his satuts</p>
+      <button class="btn custom-btn"><i class="glyphicon glyphicon-envelope"></i> sent status</button>
+    </div>
+  </div>
+</div>

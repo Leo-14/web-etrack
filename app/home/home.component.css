@@ -1,0 +1,14 @@
+.custom-icon{
+ font-size: 45px;
+ color: #000;
+}
+
+.home-block{
+ width: 100%;
+ height: 150px;
+ background-color: #ccc;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ margin-bottom: 20PX;
+ text-align: center; 
+}

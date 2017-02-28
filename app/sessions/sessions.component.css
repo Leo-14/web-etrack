@@ -1,0 +1,27 @@
+.home-block{
+    margin: 5px;
+    border: 1px solid #ddd;
+    text-align:  left;
+}
+
+div.stud-left-col{
+    padding: 35px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    text-align:  center;
+}
+
+div.stud-right-col{
+    padding: 25px;
+    margin-right: 20px;
+    border: 1px solid  #ddd;
+    margin-bottom: 30px;
+}
+
+.small-img{
+    border: 2px solid #009999;
+}
+
+.left-shift{
+  margin-left: -15px;
+}

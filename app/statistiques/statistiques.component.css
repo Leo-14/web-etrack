@@ -1,0 +1,37 @@
+.home-block{
+  margin: 5px;
+  border: 1px solid #ddd;
+  text-align:  left;
+}
+
+.stud-left-col{
+  padding: 35px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  text-align:  center;
+}
+
+.stud-right-col{
+  padding: 25px;
+  margin-right: 20px;
+  border: 1px solid  #ddd;
+  margin-bottom: 30px;
+}
+
+.custom-list{
+  border-left: 5px solid #009999;
+  background-color: #cccccc;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.custom-list:hover{
+  border-left: 5px solid #000;
+  background-color: #009999;
+  color: #fdfdfd;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}

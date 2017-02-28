@@ -1,0 +1,16 @@
+.form-control{
+  height: 50px !important;
+}
+
+.login-header{
+  background-color: #009999;
+  margin-top: -22px;
+  margin-left: -17px;
+  margin-right: -17px;
+}
+
+.custom-title {
+  color: #fdfdfd;
+  padding: 8px;
+  font-weight: bold;
+}

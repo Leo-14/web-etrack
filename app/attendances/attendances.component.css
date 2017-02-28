@@ -1,0 +1,29 @@
+.p-botton{
+    background-color: #009999;
+    color: #fff;
+}
+
+
+.stud-left-col{
+    padding: 35px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    text-align:  center;
+}
+
+.stud-right-col{
+    padding: 25px;
+    margin-right: 20px;
+    border: 1px solid  #ddd;
+    margin-bottom: 30px;
+}
+
+.small-img{
+    border: 2px solid #009999;
+}
+
+.home-block{
+  margin: 5px;
+  border: 1px solid #ddd;
+  text-align:  left;
+}

@@ -1,0 +1,27 @@
+.home-block{
+    padding-left: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    border: 1px solid  #ddd;
+    margin-bottom: 20px;
+}
+
+.custom-list{
+  border-left: 5px solid #009999;
+  background-color: #cccccc;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.custom-list:hover{
+  border-left: 5px solid #000;
+  background-color: #009999;
+  color: #fdfdfd;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}

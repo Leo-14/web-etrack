@@ -1,0 +1,67 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand"><a routerLink="/students" routerLinkActive="active"><i class="glyphicon glyphicon-arrow-left"></i></a> {{name}} Details</span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a class="" routerLink="/students/new" routerLinkActive="active"><i class="glyphicon glyphicon-plus"></i>Add Student</a></li>
+        <li class=""><a routerLink="/home" routerLinkActive="active"><i class="glyphicon glyphicon-home"></i></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kamdjou <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">my profil</a></li>
+            <li><a routerLink="/settings" routerLinkActive="active">settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="stud-left-col" *ngIf="student">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"><img src="app/assets/images/student.jpg" alt="student pic" class="small-img img-circle img-responsive"></div>
+            <p><strong>{{ student?.name | json }}</strong></p>
+            <h4>{{ student?.mat_no | json }}</h4>
+            <hr>
+            <p>Phone: {{ student?.phone_no | json }}</p>
+            <p>Email: {{ student?.email | json }}</p>
+            <p>{{ student?.faculty?.name | json }}</p>
+            <p>{{ student?.department?.name | json }}</p>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-12">
+        <div class="stud-right-col">
+            <h2 class="custom-title">Statistiques</h2>
+            <hr>
+            <p>Her is the over all of your attendance for all the sessions</p>
+            <img src="app/assets/images/graph.JPG" alt="">
+            <br>
+            <h2 class="custom-title">Status</h2>
+            <hr>
+            <p><i class="glyphicon glyphicon-registration-mark"></i> your attendance tatus is very good keep up!</p>
+            <p><i class="glyphicon glyphicon-registration-mark"></i> Hey, be carefull you need extract effort concerning you attendance</p>
+            <p><i class="glyphicon glyphicon-registration-mark"></i> oops! you are in the bad position</p>
+            <br>
+            <h2 class="custom-title">Notification</h2>
+            <hr>
+            <p>Click the button below to notified the student for his status.</p>
+            <button class="btn custom-btn"><i class="glyphicon glyphicon-envelope"></i> status</button>
+            <br>
+        </div>
+    </div>
+</div>
